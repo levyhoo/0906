@@ -7,5 +7,5 @@ from blog.models import Blogs
 def archive(request):
 	posts = Blogs.objects.all()
 	t = loader.get_template("archive.html")
-	c = Context({'post' : posts})
+	c = Context({'posts' : posts})
 	return HttpResponse(t.render(c))
