@@ -52,11 +52,15 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'thefirst.urls'
+TEMPLATE_DIRS = (
+        'F:\\work\\pyproject\\0609_01\\thefirst\\app01\\tmplates',
+    )
+
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIRS],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -106,5 +110,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 TEMPLATE_DIRS = (
-        r'F:\work\pyproject\0609_01\thefirst\app01\tmplates',
+        'F:\\work\\pyproject\\0609_01\\thefirst\\app01\\tmplates',
     )
